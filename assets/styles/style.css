@@ -169,13 +169,9 @@ aside {
         flex-flow: column nowrap;
     }
 
-    main aside {
+    main.content-aside aside {
         align-self: center;
     }
-    main .content.detail-content {
-        flex-direction: column;
-        gap: 2rem;
-      }
 
     header.navbar-container {
         flex-direction: column;
@@ -197,7 +193,7 @@ aside {
         column-gap: .5rem;
     }
 
-    main aside {
+    main.content-aside aside  {
         align-self: stretch;
     }
     main.detail-content {
