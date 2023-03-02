@@ -4,32 +4,14 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.content-image img {
-    width: 100%;
-}
-.content-image1 img {
-    width: 100%;
-}
-.content-image2 img {
-    width: 100%;
-}
-
-
 header.navbar-container {
     max-width: 1200px;
     width: 100%;
     margin-inline: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-block: 1rem;
-
 }
 
 header.navbar-container .logo img {
@@ -98,6 +80,13 @@ header.navbar-container .nav-list li:hover a {
     display: block;
 }
 
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
 main {
     padding: 10px;
     display: flex;
@@ -111,11 +100,28 @@ main .content .detail-content {
     flex-direction: row;
     background-color: #fabb93;
 }
+.content-image img {
+    width: 100%;
+}
 main .content .detail-content1 {
     display: flex;
     flex-direction: row;
 }
+.content-image1 img {
+    width: 100%;
+}
+.detail-content1{
+    display: flex;
+    flex-direction: row;
+}
 main .content .detail-content2 {
+    display: flex;
+    flex-direction: row;
+}
+.content-image2 img {
+    width: 100%;
+}
+.detail-content2{
     display: flex;
     flex-direction: row;
 }
@@ -135,13 +141,6 @@ button {
     transition: all .15s ease-in;
 }
 
-footer {
-    padding: 20px;
-    color: #fff;
-    background-color: #FF8303;
-    text-align: center;
-}
-
 figcaption {
     text-align: center;
 }
@@ -158,13 +157,15 @@ h1.biodata {
     text-align: center;
 }
 
-
 h2 {
     color: #FF8303;
 }
 
 h3 {
     color: black;
+}
+th{
+    text-align: left;
 }
 
 #content {
@@ -176,14 +177,20 @@ h3 {
 .content-description{
     text-align: justify;
     padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 .content-description1{
     text-align: justify;
     padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 .content-description2{
     text-align: justify;
+    padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .all-content {
@@ -214,15 +221,15 @@ aside {
     object-position: center;
 }
 
-.card1 img {
-    width: 150px;
-}
-
 .card {
     box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 20px;
     width: 100%;
+}
+
+.card1 img {
+    width: 150px;
 }
 
 .card1 {
@@ -233,16 +240,16 @@ aside {
     padding: 20px;
     width: 100%;
 }
-
-.detail-content1{
+.content-figure{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 }
-.detail-content2{
-    display: flex;
-    flex-direction: row;
+footer {
+    padding: 20px;
+    color: #fff;
+    background-color: #FF8303;
+    text-align: center;
 }
-
 @media screen and (max-width: 1200px) {
     main {
         flex-flow: column nowrap;
@@ -287,11 +294,6 @@ aside {
 
     .card {
         width: 100%;
-    }
-
-    .card1 img {
-        width: 200px;
-        float: center;
     }
 
     main .content .detail-content {
